@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ashutosh Singh Thakur — Backend Wizard 🧙‍♂️</title>
+  <meta name="description"
+    content="Portfolio of Ashutosh Singh Thakur — a backend & distributed systems enthusiast who builds cool stuff with Node.js, Java, and Python." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600&family=Outfit:wght@300;400;500;600;700;800&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <!-- Ambient background -->
+  <div class="ambient-bg">
+    <div class="orb orb-1"></div>
+    <div class="orb orb-2"></div>
+    <div class="orb orb-3"></div>
+    <div class="orb orb-4"></div>
+  </div>
+
+  <!-- Grain overlay -->
+  <div class="grain"></div>
+
+  <!-- Navigation -->
+  <nav id="navbar">
+    <a href="#" class="nav-logo">Ash<span class="accent">.</span>dev</a>
+    <div class="nav-links">
+      <a href="#about" class="nav-link">About</a>
+      <a href="#projects" class="nav-link">Projects</a>
+      <a href="#skills" class="nav-link">Skills</a>
+      <a href="#certs" class="nav-link">Certs</a>
+      <a href="#contact" class="nav-link">Say Hi</a>
+    </div>
+    <button id="menu-toggle" class="menu-toggle" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <!-- Mobile menu -->
+  <div id="mobile-menu" class="mobile-menu">
+    <a href="#about" class="mobile-link">About</a>
+    <a href="#projects" class="mobile-link">Projects</a>
+    <a href="#skills" class="mobile-link">Skills</a>
+    <a href="#certs" class="mobile-link">Certs</a>
+    <a href="#contact" class="mobile-link">Say Hi</a>
+  </div>
+
+  <main>
+    <!-- Hero Section -->
+    <section id="hero" class="hero">
+      <div class="hero-content">
+        <p class="hero-tag">Hey there, I'm</p>
+        <h1 class="hero-name">
+          <span class="letter-wrap">A</span><span class="letter-wrap">s</span><span class="letter-wrap">h</span><span
+            class="letter-wrap">u</span><span class="letter-wrap">t</span><span class="letter-wrap">o</span><span
+            class="letter-wrap">s</span><span class="letter-wrap">h</span>
+          <span class="hero-emoji">✌️</span>
+        </h1>
+        <p class="hero-subtitle">
+          <span class="typed-text"></span><span class="cursor-blink">|</span>
+        </p>
+        <p class="hero-desc">
+          CS undergrad at <span class="highlight">Manipal</span> who loves building backends,
+          breaking things in distributed systems, and occasionally writing code that actually works.
+        </p>
+        <div class="hero-cta">
+          <a href="#projects" class="btn btn-primary">See My Stuff ↓</a>
+          <a href="#contact" class="btn btn-ghost">Let's Talk 💬</a>
+        </div>
+        <div class="hero-socials">
+          <a href="https://github.com/Ash-dj" target="_blank" rel="noopener" class="social-link" aria-label="GitHub">
+            <svg viewBox="0 0 24 24" fill="currentColor" width="22" height="22">
+              <path
+                d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z" />
+            </svg>
+          </a>
+          <a href="https://linkedin.com/in/ashutosh-singh-thakur" target="_blank" rel="noopener" class="social-link"
+            aria-label="LinkedIn">
+            <svg viewBox="0 0 24 24" fill="currentColor" width="22" height="22">
+              <path
+                d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" />
+            </svg>
+          </a>
+          <a href="mailto:ashutosh180308@gmail.com" class="social-link" aria-label="Email">
+            <svg viewBox="0 0 24 24" fill="currentColor" width="22" height="22">
+              <path
+                d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z" />
+            </svg>
+          </a>
+        </div>
+      </div>
+      <div class="scroll-indicator">
+        <span>scroll</span>
+        <div class="scroll-line"></div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section about-section">
+      <div class="container">
+        <h2 class="section-title">
+          <span class="section-num">01.</span> About Me
+        </h2>
+        <div class="about-grid">
+          <div class="about-text">
+            <p>
+              Yo! I'm <strong>Ashutosh Singh Thakur</strong> — a third-year CS student at
+              <span class="highlight">Manipal Institute of Technology</span>, Bengaluru.
+              Currently vibing with a <span class="highlight">7.53 CGPA</span> (we don't talk about that one sem 😅).
+            </p>
+            <p>
+              I'm deeply into backend engineering and distributed systems — the kind of stuff that makes the internet
+              actually work behind the scenes. Think rate limiters, API gateways, and making sure your requests
+              don't end up in the void.
+            </p>
+            <p>
+              When I'm not coding, you'll probably find me diving deep into system design rabbit holes
+              or debating whether tabs are better than spaces (they are, fight me).
+            </p>
+          </div>
+          <div class="about-card">
+            <div class="card-glow"></div>
+            <div class="about-card-inner">
+              <div class="status-row">
+                <span class="status-dot"></span>
+                <span>Currently Building Cool Things</span>
+              </div>
+              <div class="about-detail">
+                <span class="detail-label">📍 Location</span>
+                <span class="detail-value">Bengaluru, India</span>
+              </div>
+              <div class="about-detail">
+                <span class="detail-label">🎓 Education</span>
+                <span class="detail-value">B.Tech CS @ MIT Bangalore</span>
+              </div>
+              <div class="about-detail">
+                <span class="detail-label">📅 Batch</span>
+                <span class="detail-value">2023 — 2027</span>
+              </div>
+              <div class="about-detail">
+                <span class="detail-label">⚡ Focus</span>
+                <span class="detail-value">Backend & Distributed Systems</span>
+              </div>
+              <div class="about-detail">
+                <span class="detail-label">🧩 Coursework</span>
+                <span class="detail-value">DSA, OS, Networks, DBMS, OOP</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="section projects-section">
+      <div class="container">
+        <h2 class="section-title">
+          <span class="section-num">02.</span> Things I've Built
+        </h2>
+        <p class="section-subtitle">A few projects that kept me up past 3am ☕</p>
+
+        <div class="projects-grid">
+          <!-- Project 1: API Rate Limiter -->
+          <article class="project-card" id="project-rate-limiter">
+            <div class="project-card-bg"></div>
+            <div class="project-header">
+              <div class="project-icon">🚦</div>
+              <div class="project-tags">
+                <span class="tag">Node.js</span>
+                <span class="tag">Express</span>
+              </div>
+            </div>
+            <h3 class="project-title">API Rate Limiter</h3>
+            <p class="project-desc">
+              Built a rate limiter using the <span class="highlight">Token Bucket algorithm</span> —
+              supports per-IP and per-endpoint throttling with proper HTTP 429 responses.
+              Designed it as reusable middleware so you can slap it on any route.
+            </p>
+            <ul class="project-features">
+              <li>Configurable refill rates for burst traffic</li>
+              <li>In-memory state with accurate request accounting</li>
+              <li>Redis-backed storage ready for distributed deployments</li>
+            </ul>
+          </article>
+
+          <!-- Project 2: API Gateway -->
+          <article class="project-card" id="project-api-gateway">
+            <div class="project-card-bg"></div>
+            <div class="project-header">
+              <div class="project-icon">🌐</div>
+              <div class="project-tags">
+                <span class="tag">Node.js</span>
+                <span class="tag">Express</span>
+              </div>
+            </div>
+            <h3 class="project-title">Lightweight API Gateway</h3>
+            <p class="project-desc">
+              A centralized gateway that handles <span class="highlight">auth, rate limiting, and routing</span>
+              for multiple backend services. Keeps your microservices clean and focused on business logic.
+            </p>
+            <ul class="project-features">
+              <li>API key-based access control</li>
+              <li>Path-based routing with preserved HTTP methods</li>
+              <li>Stateless backend services — all cross-cutting at the gate</li>
+              <li>Extensible design for observability plugins</li>
+            </ul>
+          </article>
+
+          <!-- Project 3: Resume Keyword Matcher -->
+          <article class="project-card" id="project-keyword-matcher">
+            <div class="project-card-bg"></div>
+            <div class="project-header">
+              <div class="project-icon">🔍</div>
+              <div class="project-tags">
+                <span class="tag">Java</span>
+              </div>
+            </div>
+            <h3 class="project-title">Resume Keyword Matcher</h3>
+            <p class="project-desc">
+              Simulates <span class="highlight">ATS-style screening</span> using string processing
+              and weighted keyword scoring. Basically a tool to beat the robots at their own game.
+            </p>
+            <ul class="project-features">
+              <li>Weighted keyword scoring system</li>
+              <li>Resume vs. job description comparison</li>
+              <li>Identifies missing or weakly matched skills</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="section skills-section">
+      <div class="container">
+        <h2 class="section-title">
+          <span class="section-num">03.</span> My Toolkit
+        </h2>
+        <p class="section-subtitle">Things I actually know (not just listed on my resume)</p>
+
+        <div class="skills-grid">
+          <div class="skill-category">
+            <h3 class="skill-cat-title">
+              <span class="skill-icon">⌨️</span> Languages
+            </h3>
+            <div class="skill-pills">
+              <span class="skill-pill" data-level="strong">Java</span>
+              <span class="skill-pill" data-level="strong">JavaScript</span>
+              <span class="skill-pill" data-level="medium">Python</span>
+            </div>
+          </div>
+
+          <div class="skill-category">
+            <h3 class="skill-cat-title">
+              <span class="skill-icon">🔧</span> Backend
+            </h3>
+            <div class="skill-pills">
+              <span class="skill-pill" data-level="strong">Node.js</span>
+              <span class="skill-pill" data-level="strong">Express.js</span>
+              <span class="skill-pill" data-level="medium">REST API Design</span>
+            </div>
+          </div>
+
+          <div class="skill-category">
+            <h3 class="skill-cat-title">
+              <span class="skill-icon">🗃️</span> Databases
+            </h3>
+            <div class="skill-pills">
+              <span class="skill-pill" data-level="medium">SQL</span>
+              <span class="skill-pill" data-level="medium">Joins & Aggregations</span>
+              <span class="skill-pill" data-level="medium">Query Optimization</span>
+              <span class="skill-pill" data-level="medium">Indexing</span>
+            </div>
+          </div>
+
+          <div class="skill-category">
+            <h3 class="skill-cat-title">
+              <span class="skill-icon">🧠</span> ML Basics
+            </h3>
+            <div class="skill-pills">
+              <span class="skill-pill" data-level="learning">Linear Regression</span>
+              <span class="skill-pill" data-level="learning">Logistic Regression</span>
+              <span class="skill-pill" data-level="learning">Decision Trees</span>
+              <span class="skill-pill" data-level="learning">scikit-learn</span>
+            </div>
+          </div>
+
+          <div class="skill-category">
+            <h3 class="skill-cat-title">
+              <span class="skill-icon">⚙️</span> Systems & Distributed
+            </h3>
+            <div class="skill-pills">
+              <span class="skill-pill" data-level="strong">Rate Limiting</span>
+              <span class="skill-pill" data-level="strong">API Gateway Architecture</span>
+              <span class="skill-pill" data-level="medium">Token Bucket Algorithm</span>
+              <span class="skill-pill" data-level="medium">HTTP Protocol</span>
+              <span class="skill-pill" data-level="medium">Redis-based Design</span>
+            </div>
+          </div>
+
+          <div class="skill-category">
+            <h3 class="skill-cat-title">
+              <span class="skill-icon">🧱</span> Core CS
+            </h3>
+            <div class="skill-pills">
+              <span class="skill-pill" data-level="strong">DSA</span>
+              <span class="skill-pill" data-level="strong">OOP</span>
+              <span class="skill-pill" data-level="medium">Operating Systems</span>
+              <span class="skill-pill" data-level="medium">Git</span>
+              <span class="skill-pill" data-level="medium">npm</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Certifications Section -->
+    <section id="certs" class="section certs-section">
+      <div class="container">
+        <h2 class="section-title">
+          <span class="section-num">04.</span> Certs & Courses
+        </h2>
+        <p class="section-subtitle">Proof that I sometimes finish what I start 📜</p>
+
+        <div class="certs-list">
+          <div class="cert-item">
+            <div class="cert-icon">☕</div>
+            <div class="cert-info">
+              <h3 class="cert-name">Introduction to Java Programming</h3>
+              <p class="cert-issuer">University of Pennsylvania</p>
+            </div>
+            <div class="cert-badge">completed</div>
+          </div>
+
+          <div class="cert-item">
+            <div class="cert-icon">💻</div>
+            <div class="cert-info">
+              <h3 class="cert-name">Coding Interview Preparation</h3>
+              <p class="cert-issuer">Meta</p>
+            </div>
+            <div class="cert-badge">completed</div>
+          </div>
+
+          <div class="cert-item">
+            <div class="cert-icon">📊</div>
+            <div class="cert-info">
+              <h3 class="cert-name">Ordered Data Structures</h3>
+              <p class="cert-issuer">University of Illinois</p>
+            </div>
+            <div class="cert-badge">completed</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section contact-section">
+      <div class="container">
+        <h2 class="section-title">
+          <span class="section-num">05.</span> Say Hi
+        </h2>
+        <div class="contact-content">
+          <p class="contact-text">
+            I'm always down to chat about backend stuff, distributed systems,
+            or just nerdy tech things in general. Slide into my inbox — I promise I reply faster than
+            my API gateway routes requests. 😄
+          </p>
+          <a href="mailto:ashutosh180308@gmail.com" class="btn btn-primary btn-large">
+            Drop Me a Mail ✉️
+          </a>
+          <div class="contact-links">
+            <a href="https://github.com/Ash-dj" target="_blank" rel="noopener" class="contact-link">
+              <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20">
+                <path
+                  d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z" />
+              </svg>
+              github.com/Ash-dj
+            </a>
+            <a href="https://linkedin.com/in/ashutosh-singh-thakur" target="_blank" rel="noopener" class="contact-link">
+              <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20">
+                <path
+                  d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" />
+              </svg>
+              linkedin/ashutosh-singh-thakur
+            </a>
+            <a href="tel:+919752540206" class="contact-link">
+              <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20">
+                <path
+                  d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z" />
+              </svg>
+              +91-9752540206
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <p>Built with ☕ and questionable sleep schedules by <span class="highlight">Ashutosh</span></p>
+    <p class="footer-sub">© 2026 — Made from scratch, no templates were harmed</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
